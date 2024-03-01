@@ -1,0 +1,42 @@
+# Node modules
+node_modules
+
+# Test report folders
+allure-report/
+reports/
+allure-results
+
+# Logs
+logs/
+
+# Temporary files
+*.log
+*.tmp
+*.temp
+*temp
+
+# IDE specific files
+.vscode/
+# .idea/
+
+# Environment files
+# .env
+
+# Compiled TypeScript files
+dist/
+
+# Ignore npm debug logs
+npm-debug.log*
+
+# Ignore WebDriverIO generated files
+.wdio*
+
+package-lock.json
+
+# apk file
+apps/
+*.apk
+
+.DS_Store 
+
+
