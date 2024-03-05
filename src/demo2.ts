@@ -20,7 +20,7 @@ async function connectToOracle() {
 
     // Execute INSERT SQL statement
     const newCustomer: Customer = {
-      CUSTOMER_ID: 6,
+      CUSTOMER_ID: 5,
       CUSTOMER_NAME: 'Johnny Bravo',
       CITY: 'Washington'
     };
@@ -37,7 +37,7 @@ async function connectToOracle() {
     console.log('Record for Johnny Bravo inserted successfully.');
 
     // Execute SELECT query to print table contents
-    const result = await connection.execute<Customer>('SELECT * FROM customers');
+    const result = await connection.execute('SELECT * FROM CUSTOMERS');
 
     // Check if result has rows
     if (result.rows) {
@@ -46,7 +46,7 @@ async function connectToOracle() {
 
       // Print all rows
       console.log('Rows:');
-      console.log(result.rows.map(row => row.CUSTOMER_NAME));
+      console.log(result.rows);
       
     } else {
       console.log('No data returned from the query.');

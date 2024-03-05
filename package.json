@@ -2,14 +2,14 @@
   "name": "ts-oracle-db",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "oracle": "npx tsc && node dist/OracleDBQueryReader.js"
   },
   "author": "Akash Krishna",
   "license": "ISC",
   "dependencies": {
     "@types/oracledb": "^6.2.1",
+    "dotenv": "^16.4.5",
     "oracledb": "^6.3.0",
     "ts-node": "^10.9.2"
   },
